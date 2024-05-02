@@ -1,0 +1,38 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      <div slot="title">
+          Atualizar Email!
+      </div>
+      <div slot="actions">
+    
+      </div>
+      <div slot="footer">
+    
+      </div>
+      <div class="containerMain">
+        <lightning-record-edit-form
+         record-id={recordId}
+        object-api-name="Account"
+        onsuccess={showSuccessToast}
+>
+    <lightning-messages> </lightning-messages>
+    <lightning-output-field field-name="AccountId">
+    </lightning-output-field>
+    <lightning-input-field field-name="Email__c"> </lightning-input-field>
+    <lightning-input-field field-name="Retrive_email__c"> </lightning-input-field>
+    <div class="btnField">
+    <lightning-button
+        class="slds-m-top_small"
+        variant="brand"
+        type="submit"
+        name="update"
+        label="Atualizar"
+    >
+    </lightning-button>
+    </div>
+</lightning-record-edit-form>
+        
+      </div>
+    </lightning-card>
+    
+</template>
