@@ -1,0 +1,27 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base" onsuccess={showSuccessToast}>
+      <div slot="title">
+         Criação de conta rapida!
+      </div>
+      <div slot="footer">
+        <a href="https://daj000005uelueau-dev-ed.develop.lightning.force.com/lightning/o/Account/list?filterName=Recent">Ver Todos</a>
+      </div>
+      <div class="mainContent">
+        
+        <lightning-record-edit-form object-api-name="Account"  >
+            <lightning-messages> </lightning-messages>
+            <lightning-input-field field-name="Name"> </lightning-input-field>
+            <lightning-input-field field-name="Country__c"> </lightning-input-field>
+            <div class="btnField">
+            <lightning-button
+                class="slds-m-top_small"
+                type="submit"
+                label="Criar"
+            >
+            </lightning-button>
+        </div>
+        </lightning-record-edit-form>
+        
+      </div>
+    </lightning-card>
+</template>

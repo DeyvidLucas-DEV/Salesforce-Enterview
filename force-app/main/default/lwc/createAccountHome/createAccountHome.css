@@ -1,0 +1,8 @@
+.mainContent{
+    padding: 10px;
+}
+
+.btnField{
+    display: flex;
+    justify-content: end;
+}
